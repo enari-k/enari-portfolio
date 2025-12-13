@@ -117,6 +117,10 @@ export default function Home() {
               <span className="font-semibold">ゲームクリエイター甲子園2024</span>
               <span className="text-blue-600 font-bold">月間賞</span>
             </li>
+            <li className="flex flex-col md:flex-row md:items-center justify-between bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+              <span className="font-semibold">(公財)日本発明振興協会 子ども発明教室 発明奨励賞</span>
+              <span className="text-blue-600 font-bold">佳作</span>
+            </li>
           </ul>
         </section>
 
