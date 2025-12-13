@@ -47,7 +47,7 @@ const games = [
   {
     title: "魔法少女ノ常夏島",
     role: "Pr / シナリオ",
-    desc: "同人作品",
+    desc: "二次創作作品",
     link: null,
   },
 ];
@@ -87,7 +87,7 @@ export default function Home() {
           </p>
           <div className="flex flex-wrap gap-2 justify-center md:justify-start mt-4">
             {/* スキルタグ */}
-            {["Game Dev", "Material Science", "Web Dev", "AtCoder", "Kaggle", "Live2D"].map((tag) => (
+            {["Game Dev", "Material Science", "Web Dev", "AtCoder", "Kaggle", "Live2D", "Scenario"].map((tag) => (
               <span key={tag} className="px-3 py-1 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-600 shadow-sm">
                 {tag}
               </span>
