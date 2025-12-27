@@ -30,7 +30,7 @@ const games = [
   {
     title: "Elemate",
     role: "個人製作",
-    desc: "詳細なし",
+    desc: "traP15Jam作品",
     link: null,
   },
   {
@@ -49,13 +49,19 @@ const games = [
     title: "魔法少女ノ常夏島",
     role: "Pr / シナリオ",
     desc: "二次創作作品",
-    link: null,
+    link: "https://x.com/mano_shima13",
   },
+  {
+    title: "超安心安全な最悪の鬱ゲー",
+    role: "個人製作",
+    desc: "Unityroom公開中",
+    link: "https://unityroom.com/games/utuge",
+  }
 ];
 
 const webs = [
   {
-    title: "PocketSign Internship SNS",
+    title: "Internship SNS",
     role: "Full Stack",
     desc: "インターン提出作品",
     link: "https://pocketsign-internship.vercel.app/",
