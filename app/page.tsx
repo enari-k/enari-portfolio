@@ -9,6 +9,7 @@ const CONFIDENT_PROJECTS = [
   "Make 10sion",
   "魔法少女ノ常夏島",
   "Internship SNS",
+  "君をむしばむこの力で 公式HP",
 ];
 
 const allProjects = [
