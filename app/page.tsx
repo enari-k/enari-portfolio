@@ -193,7 +193,7 @@ export default function Home() {
             <SocialLink href="https://zenn.dev/enari_k" label="Zenn" color="bg-blue-500 text-white" />
             <SocialLink href="https://www.kaggle.com/enarik" label="Kaggle" color="bg-sky-500 text-white" />
             <SocialLink href="https://www.slideshare.net/rintakano624" label="SlideShare" color="bg-yellow-400 text-white"/>
-            <SocialLink href="https://github.com/Rinta0624" label="Github" color="bg-gray-800 text-white"/>
+            <SocialLink href="https://github.com/enari-k" label="Github" color="bg-gray-800 text-white"/>
           </div>
         </header>
 
