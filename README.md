@@ -1,6 +1,6 @@
 # enari-portfolio
 
-enari-K の活動、制作物、技術スタックを統合したポートフォリオサイトのソースコードです。
+enari_K の活動、制作物、技術スタックを統合したポートフォリオサイトのソースコードです。
 
 [![Live Site](https://img.shields.io/badge/Live_Demo-enari--k.com-3EA8FF?style=for-the-badge&logo=google-chrome&logoColor=white)](https://enari-k.com)
 
