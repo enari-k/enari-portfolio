@@ -5,17 +5,26 @@ import { title } from "process";
 // 自信のある作品のタイトルリスト
 const CONFIDENT_PROJECTS = [
   "traPortal",
+  "traQ",
   "Material-based Physics Engine",
   "Nand to Tetris",
   "No framework web",
   "悪夢祓いのアリス",
   "君を蝕むこの力で",
-  "超安心安全な最悪の鬱ゲー",
   "君をむしばむこの力で 公式HP",
 ];
 
 const allProjects = [
   // プロジェクトデータに追加
+{
+  title: "traQ",
+  role: "Client Engineer",
+  desc: "サークルtraPの部内専用チャットサービスです。部員同士の連絡やプライベートの共有に使われています。",
+  link: "https://github.com/traPtitech/traQ_S-UI",
+  zenn: "https://trap.jp/post/1051/",
+  category: "Web",
+  tags: ["Typescript","Vue"]
+},
 {
   title: "traPortal",
   role: "Backend Engineer",
