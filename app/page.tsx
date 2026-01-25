@@ -10,8 +10,7 @@ const CONFIDENT_PROJECTS = [
   "Nand to Tetris",
   "No framework web",
   "悪夢祓いのアリス",
-  "君を蝕むこの力で",
-  "君をむしばむこの力で 公式HP",
+  "君を蝕むこの力で"
 ];
 
 const allProjects = [
@@ -47,7 +46,7 @@ const allProjects = [
   title:"Nand to Tetris",
   role:"engineer",
   desc:"Nand回路一つを出発点にコンピューター上にコンピューターを製作しTetrisを実装する",
-  link:null, //リポジトリが出来たら入れる
+  link:"https://github.com/enari-k/Nand-to-Tetris", //リポジトリが出来たら入れる
   zenn:"https://zenn.dev/enari_k/articles/e63b21cd3057df",
   category:"computer science",
 },
