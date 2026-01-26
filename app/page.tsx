@@ -207,7 +207,7 @@ export default function Home() {
           {/* ソーシャルリンクボタン */}
           <div className="flex flex-wrap gap-4 mt-6 justify-center md:justify-start">
             <SocialLink href="https://atcoder.jp/users/enari_K" label="AtCoder" color="bg-yellow-900 text-white" />
-            <SocialLink href="https://unityroom.com/users/p6u9bwyk408j5sm3lqvh" label="unityroom" color="bg-indigo-600 text-white" />
+            <SocialLink href="https://unityroom.com/users/enari-k" label="unityroom" color="bg-indigo-600 text-white" />
             <SocialLink href="https://zenn.dev/enari_k" label="Zenn" color="bg-blue-500 text-white" />
             <SocialLink href="https://www.kaggle.com/enarik" label="Kaggle" color="bg-sky-500 text-white" />
             <SocialLink href="https://www.slideshare.net/rintakano624" label="SlideShare" color="bg-yellow-400 text-white"/>
