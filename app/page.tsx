@@ -46,7 +46,7 @@ const allProjects = [
   title:"Nand to Tetris",
   role:"engineer",
   desc:"Nand回路一つを出発点にコンピューター上にコンピューターを製作しTetrisを実装する",
-  link:"https://github.com/enari-k/Nand-to-Tetris", //リポジトリが出来たら入れる
+  link:"https://github.com/enari-k/Nand-to-Tetris", 
   zenn:"https://zenn.dev/enari_k/articles/e63b21cd3057df",
   category:"computer science",
 },
@@ -175,7 +175,7 @@ export default function Home() {
     <main className="min-h-screen bg-gray-50 text-gray-800 font-sans selection:bg-blue-100">
       <div className="max-w-3xl mx-auto px-6 py-12">
         
-        {/* --- ヘッダー・自己紹介エリア (タグとリンクを完全復元) --- */}
+        {/* --- ヘッダー・自己紹介エリア --- */}
         <header className="mb-12 text-center md:text-left">
           <div className="shrink-0 mb-4">
             <div className="relative w-32 h-32 md:w-40 md:h-40">
@@ -194,8 +194,9 @@ export default function Home() {
           <p className="text-lg text-gray-600 mb-2">
             東京科学大学 (旧東工大) 物質理工学院 材料系 B2 / traP
           </p>
-          
-          {/* スキルタグを復元 */}
+          <p className="text-sm text-gray-500 font-mono mb-2 flex items-center justify-center md:justify-start gap-2">
+            E-mail : contact@enari-k.com
+          </p>
           <div className="flex flex-wrap gap-2 justify-center md:justify-start mt-4">
             {["Game Dev", "Material Science", "Web Dev", "AtCoder", "Kaggle", "Live2D", "Scenario"].map((tag) => (
               <span key={tag} className="px-3 py-1 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-600 shadow-sm">
