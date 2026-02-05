@@ -222,6 +222,7 @@ export default function Home() {
             🏆 Awards
           </h2>
           <ul className="space-y-3">
+            <AwardItem title="ゲームクリエイター甲子園2025" award="セミファイナル(Best30)" />
             <AwardItem title="2024 1-Monthon (部内ハッカソン)" award="優秀賞" />
             <AwardItem title="ゲームクリエイター甲子園2024" award="月間賞" />
             <AwardItem title="2015 (公財)日本発明振興協会 子ども発明教室 発明奨励賞" award="佳作" />
