@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { title } from "process";
+import { link } from "fs";
 
 // 自信のある作品のタイトルリスト
 const CONFIDENT_PROJECTS = [
@@ -164,7 +165,64 @@ const allProjects = [
     category: "Web",
   },
 ];
-
+// 資格・修了コース・スキルのデータ
+const CERTIFICATIONS = [
+  {
+    category: "Computer Science",
+    icon: "💻",
+    items: [
+      { 
+        title: "Nand to Tetris", 
+        meta: "Full Implementation", 
+        desc: "Nand回路から始まり、CPU、アセンブラ、VM、コンパイラ、OS、そしてTetrisまでをフルスクラッチで実装。",
+        link: "https://github.com/enari-k/Nand-to-Tetris", 
+      },
+      { 
+        title: "Paiza Learning", 
+        meta: "C# Course Completed", 
+        desc: "C#の言語仕様および標準ライブラリの活用方法を網羅的に学習・修了。",
+        image: "/crown_2307_b-cac7670f7a313804ecf14ecb91773d3e2a190f29069a2ad09e46be6de38c6539-0000.jpg"
+      },
+    ]
+  },
+  {
+    category: "Algorithm & Data Science",
+    icon: "📊",
+    items: [
+      { 
+        title: "GCI (Global Consumer Intelligence)", 
+        meta: "University of Tokyo / Matsuo Lab", 
+        desc: "東京大学松尾研究室主催。データサイエンスの基礎から機械学習モデルの構築、ビジネス適用までを修了。" 
+      },
+      { 
+        title: "東京科学大学データサイエンス・AI全学教育プログラム（リテラシーレベル） ", 
+        meta: "Institute of Science Tokyo", 
+        desc: "東京科学大学主催。データサイエンスの基礎から機械学習モデルの構築までを修了。",
+        link: "https://www.openbadge-global.com/api/v1.0/openBadge/v2/Wallet/Public/GetAssertionShare/VThDblRZc09yYnB1RUM5NUN3WmVXUT09",
+        image: "/東京科学大学データサイエンス・AI全学教育プログラム（リテラシーレベル） _ University-wide Education Program in Data Science and Artificial Intelligence (Literacy Level),Institute of Science Tokyo _image.png"
+      },
+      { 
+        title: "東京科学大学データサイエンス・AI全学教育プログラム（応用基礎レベル）", 
+        meta: "Institute of Science Tokyo", 
+        desc: "東京科学大学主催。データサイエンスの基礎から機械学習モデルの構築までを修了。" ,
+        link: "https://www.openbadge-global.com/api/v1.0/openBadge/v2/Wallet/Public/GetAssertionShare/T1FMVmxsOWI4VG5GWEFtc3ZtM0RBZz09",
+        image:"/東京科学大学データサイエンス・AI全学教育プログラム（応用基礎レベル）_ University-wide Education Program in Data Science and Artificial Intelligence (Advanced Literacy Level), Institute of Science Tokyo _image.png"
+      },
+    ]
+  },
+  {
+    category: "Creative & Design",
+    icon: "🎨",
+    items: [
+      { 
+        title: "Adobe Creative College", 
+        meta: "Illustrator Basic", 
+        desc: "Illustratorを用いたグラフィックデザインの基礎コース修了。",
+        image: "/Course_14409576__15121537.png"
+      },
+    ]
+  }
+];
 
 
 export default function Home() {
@@ -215,20 +273,6 @@ export default function Home() {
             <SocialLink href="https://github.com/enari-k" label="Github" color="bg-gray-800 text-white"/>
           </div>
         </header>
-
-        {/* --- 大会・コンテスト --- */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold border-b-2 border-gray-200 pb-2 mb-6">
-            🏆 Awards
-          </h2>
-          <ul className="space-y-3">
-            <AwardItem title="ゲームクリエイター甲子園2025" award="セミファイナル(Best30)" />
-            <AwardItem title="2024 1-Monthon (部内ハッカソン)" award="優秀賞" />
-            <AwardItem title="ゲームクリエイター甲子園2024" award="月間賞" />
-            <AwardItem title="2015 (公財)日本発明振興協会 子ども発明教室 発明奨励賞" award="佳作" />
-          </ul>
-        </section>
-
         {/* --- 自信のある作品セクション --- */}
         <section className="mb-16">
           <h2 className="text-2xl font-bold border-b-2 border-blue-200 pb-2 mb-6">
@@ -240,7 +284,40 @@ export default function Home() {
             ))}
           </div>
         </section>
-
+        {/* --- 大会・コンテスト --- */}
+        <section className="mb-16">
+          <h2 className="text-2xl font-bold border-b-2 border-gray-200 pb-2 mb-6">
+            🏆 Awards
+          </h2>
+          <ul className="space-y-3">
+            <AwardItem title="ゲームクリエイター甲子園2025" award="セミファイナル(Best30)" />
+            <AwardItem title="Atcoder Heuristic Contest060" award="144位 1854(青)パフォ"/>
+            <AwardItem title="2024 1-Monthon (部内ハッカソン)" award="優秀賞" />
+            <AwardItem title="ゲームクリエイター甲子園2024" award="月間賞" />
+            <AwardItem title="2015 (公財)日本発明振興協会 子ども発明教室 発明奨励賞" award="佳作" />
+          </ul>
+          <div className="mt-4 text-right">
+            <Link href="/about" className="text-sm text-blue-600 hover:underline font-medium">
+              View Credentials / About Me →
+            </Link>
+          </div>
+        </section>
+        {/*【ここに追加】スキル・修了コースセクション */}
+        <section className="mb-16">
+          <h2 className="text-2xl font-bold border-b-2 border-gray-200 pb-2 mb-6">
+            🎓 Certifications & Skills
+          </h2>
+          <div className="grid grid-cols-1 gap-6">
+            {CERTIFICATIONS.map((group, index) => (
+              <CertificationCard key={index} data={group} />
+            ))}
+          </div>
+          <div className="mt-4 text-right">
+            <Link href="/about" className="text-sm text-blue-600 hover:underline font-medium">
+              View Credentials / About Me →
+            </Link>
+          </div>
+        </section>
         {/* --- アーカイブ・過去の作品セクション --- */}
         <section className="mb-16">
           <h2 className="text-2xl font-bold border-b-2 border-gray-200 pb-2 mb-6 text-gray-500">
@@ -316,6 +393,60 @@ function ProjectCard({ data, isArchive }: { data: any; isArchive: boolean }) {
             {isArchive ? "Reflection ↗" : "Article ↗"}
           </a>
         )}
+      </div>
+    </div>
+  );
+}
+
+function CertificationCard({ data }: { data: typeof CERTIFICATIONS[0] }) {
+  return (
+    <div className="bg-white rounded-xl border border-gray-100 p-6 shadow-sm">
+      <h3 className="flex items-center gap-2 text-xl font-bold text-gray-800 mb-4">
+        <span>{data.icon}</span> {data.category}
+      </h3>
+      <div className="space-y-6"> {/* 間隔を少し広げました */}
+        {data.items.map((item, idx) => (
+          <div key={idx} className="flex flex-col sm:flex-row gap-4 border-l-2 border-gray-200 pl-4 hover:border-blue-400 transition-colors">
+            
+            {/* テキスト情報エリア */}
+            <div className="flex-grow">
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-1">
+                <h4 className="font-bold text-gray-700">{item.title}</h4>
+                <span className="text-xs font-mono text-blue-600 bg-blue-50 px-2 py-0.5 rounded shrink-0">
+                  {item.meta}
+                </span>
+              </div>
+              <p className="text-sm text-gray-600 leading-relaxed mb-2">{item.desc}</p>
+              
+              {/* 外部リンクがある場合（Credlyなど） */}
+              {item.link && (
+                <a href={item.link} target="_blank" rel="noopener noreferrer" className="text-xs text-blue-500 hover:underline flex items-center gap-1">
+                  Verify Credential ↗
+                </a>
+              )}
+            </div>
+
+            {/* 画像エリア（バッジや修了証がある場合） */}
+            {item.image && (
+              <div className="shrink-0 mt-2 sm:mt-0">
+                {/* Next/Imageを使用。
+                  クリックしたら拡大するモーダルを作るのがベストですが、
+                  まずは「別タブで画像を開く」リンクにするのが手軽です。
+                */}
+                <a href={item.image} target="_blank" rel="noopener noreferrer">
+                  <div className="relative w-24 h-16 sm:w-32 sm:h-20 border border-gray-100 rounded overflow-hidden shadow-sm hover:opacity-80 transition-opacity bg-gray-50">
+                    <Image 
+                      src={item.image} 
+                      alt={`${item.title} certificate`}
+                      fill
+                      className="object-contain p-1" // バッジならcontain、賞状ならcoverでもOK
+                    />
+                  </div>
+                </a>
+              </div>
+            )}
+          </div>
+        ))}
       </div>
     </div>
   );
