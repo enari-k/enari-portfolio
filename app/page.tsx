@@ -38,7 +38,7 @@ const allProjects = [
   title: "Material-based Physics Engine",
   role: "Lead Developer (Materials Science x CS)",
   desc: "材料力学の知見を導入した物理エンジン。剛体物理に加え、せん断応力やひずみテンソルを考慮した変形体シミュレーションを実装。ヤング率等の物性値をパラメータとして与えることで、現実の物質挙動を再現。",
-  link: null, //リポジトリが出来たら入れる
+  link: "https://github.com/enari-k/Material-based-Physics-Engine", //リポジトリが出来たら入れる
   zenn: "https://zenn.dev/enari_k/articles/f21bc592f87a7a", 
   category: "R&D",
   tags: ["C#", "Physics", "Math", "Optimization"]
@@ -51,14 +51,14 @@ const allProjects = [
   zenn:"https://zenn.dev/enari_k/articles/e63b21cd3057df",
   category:"computer science",
 },
-{
+/*{
   title:"No framework web",
   role:"engineer",
   desc:"フレームワークを使わずGoのみでWebサイトを実装する",
   link:null,
   zenn:null,
   category:"computer science",
-},
+},*/
 {
   title:"GCI",
   role:"Data Scientist",
