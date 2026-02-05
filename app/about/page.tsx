@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { title } from "process";
 
 // 証書画像のリスト
 const CERT_IMAGES = [
@@ -13,8 +14,13 @@ const CERT_IMAGES = [
 ];
 // リンク付きの受賞リスト
 const AWARDS_LIST = [
+    {
+        title: "ゲームクリエイター甲子園 2024",
+        result: "11月 月間賞",
+        link: "https://game.creators-guild.com/g4c/38552/"
+    },
   { 
-    title: "ゲームクリエイター甲子園 2024", 
+    title: "ゲームクリエイター甲子園 2025", 
     result: "Best 30", 
     // 結果発表ページや、自分の作品掲載ページのURL
     link: "https://game.creators-guild.com/g4c/43066/" 
