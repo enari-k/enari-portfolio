@@ -21,7 +21,7 @@ const AWARDS_LIST = [
   },
   { 
     title: "ゲームクリエイター甲子園 2025 「悪夢祓いのアリス」", 
-    result: "Best 30", 
+    result: "ゲームサイクル賞", 
     // 結果発表ページや、自分の作品掲載ページのURL
     link: "https://game.creators-guild.com/g4c/43066/" 
   },
