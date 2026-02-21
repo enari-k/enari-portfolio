@@ -16,10 +16,10 @@ const CERT_IMAGES = [
 // リンク付きの受賞リスト
 const AWARDS_LIST = [
   { 
-    title: "ゲームクリエイター甲子園 2025 「悪夢祓いのアリス」", 
-    result: "ゲームサイクル賞", 
+    title: "ゲームクリエイター甲子園 2024 「悪夢祓いのアリス」", 
+    result: "11月月間賞", 
     // 結果発表ページや、自分の作品掲載ページのURL
-    link: "https://game.creators-guild.com/g4c/43066/" 
+    link: "https://game.creators-guild.com/g4c/38552/" 
   },
   { 
     title: "AtCoder Beginner Contest 441", 
