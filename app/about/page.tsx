@@ -9,8 +9,8 @@ const CERT_IMAGES = [
   { title: "Adobe Illustrator コース 基礎編", src: "/certs/スクリーンショット_6-2-2026_5026_.jpeg" },
   { title: "東京科学大学データサイエンス・AI全学教育プログラム（リテラシーレベル）", src: "/certs/スクリーンショット_6-2-2026_5112_.jpeg" },
   { title: "東京科学大学データサイエンス・AI全学教育プログラム（応用基礎レベル）", src: "/certs/スクリーンショット_6-2-2026_5141_.jpeg" },
-  { title: "AtCoder Heuristic Contest 060", src: "/certs/スクリーンショット_6-2-2026_52033_atcoder.jp.jpeg" },
-  { title: "AtCoder Beginner Contest 441", src: "/certs/スクリーンショット_6-2-2026_5210_atcoder.jp.jpeg" },
+  //{ title: "AtCoder Heuristic Contest 060", src: "/certs/スクリーンショット_6-2-2026_52033_atcoder.jp.jpeg" },
+  //{ title: "AtCoder Beginner Contest 446", src: "/certs/スクリーンショット_6-2-2026_5210_atcoder.jp.jpeg" },
   { title: "ゲームクリエイター甲子園 2024 「悪夢祓いのアリス」", src: "/certs/ゲームサイクル賞.png"}
 ];
 // リンク付きの受賞リスト
@@ -22,13 +22,13 @@ const AWARDS_LIST = [
     link: "https://game.creators-guild.com/g4c/38552/" 
   },
   { 
-    title: "AtCoder Beginner Contest 441", 
-    result: "Rating 874", 
+    title: "AtCoder Beginner Contest 446", 
+    result: "Performance 911", 
     link: "https://atcoder.jp/users/enari_K/history/share/abc441" 
   },
   { 
     title: "AtCoder Heuristic Contest 060", 
-    result: "Rating 1854", 
+    result: "Performance 1854", 
     link: "https://atcoder.jp/users/enari_K/history/share/ahc060" 
   },
   { 
