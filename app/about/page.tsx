@@ -12,7 +12,8 @@ const CERT_IMAGES = [
   { title: "東京科学大学データサイエンス・AI全学教育プログラム（応用基礎レベル）", src: "/certs/スクリーンショット_6-2-2026_5141_.jpeg" },
   //{ title: "AtCoder Heuristic Contest 060", src: "/certs/スクリーンショット_6-2-2026_52033_atcoder.jp.jpeg" },
   //{ title: "AtCoder Beginner Contest 446", src: "/certs/スクリーンショット_6-2-2026_5210_atcoder.jp.jpeg" },
-  { title: "ゲームクリエイター甲子園 2025 「悪夢祓いのアリス」", src: "/certs/ゲームサイクル賞.png"}
+  { title: "ゲームクリエイター甲子園 2025 「悪夢祓いのアリス」", src: "/certs/ゲームサイクル賞.png"},
+  { title: "PRTIMES hackathon 2026 Spring", src: "/certs/PRTIMES個人賞.png"}
 ];
 // リンク付きの受賞リスト
 const AWARDS_LIST = [
@@ -36,6 +37,11 @@ const AWARDS_LIST = [
     title: "AtCoder Heuristic Contest 060", 
     result: "Performance 1854", 
     link: "https://atcoder.jp/users/enari_K/history/share/ahc060" 
+  },
+  {
+    title: "Progateハッカソン powered by AWS 2026 第一回",
+    result:"優秀賞",
+    link: null
   },
   { 
     title: "2015 (公財)日本発明振興協会 子ども発明教室", 
