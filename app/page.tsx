@@ -299,6 +299,7 @@ export default function Home() {
             🏆 Awards
           </h2>
           <ul className="space-y-3">
+            <AwardItem title="PRTIMES hackathon 2026 Spring" award="動き動かす人賞(個人賞)" />
             <AwardItem title="Progateハッカソン powered by AWS 2026 第一回" award="優秀賞"/>
             <AwardItem title="ゲームクリエイター甲子園2025 「悪夢祓いのアリス」" award="ゲームサイクル賞" />
             <AwardItem title="Atcoder Heuristic Contest060" award="144位 1854(青)パフォ"/>
