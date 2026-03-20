@@ -12,8 +12,10 @@ const CERT_IMAGES = [
   { title: "東京科学大学データサイエンス・AI全学教育プログラム（応用基礎レベル）", src: "/certs/スクリーンショット_6-2-2026_5141_.jpeg" },
   //{ title: "AtCoder Heuristic Contest 060", src: "/certs/スクリーンショット_6-2-2026_52033_atcoder.jp.jpeg" },
   //{ title: "AtCoder Beginner Contest 446", src: "/certs/スクリーンショット_6-2-2026_5210_atcoder.jp.jpeg" },
+  { title: "ゲームクリエイター甲子園 2024 「悪夢祓いのアリス」", src: "/certs/悪夢払いのアリス月間賞.jpg"},
   { title: "ゲームクリエイター甲子園 2025 「悪夢祓いのアリス」", src: "/certs/ゲームサイクル賞.png"},
-  { title: "PRTIMES hackathon 2026 Spring", src: "/certs/PRTIMES個人賞.png"}
+  { title: "PRTIMES hackathon 2026 Spring", src: "/certs/PRTIMES個人賞.png"},
+  { title: "東京大学グローバル消費インテリジェンス寄附講座", src: "/certs/GCI修了証.jpeg"}
 ];
 // リンク付きの受賞リスト
 const AWARDS_LIST = [
