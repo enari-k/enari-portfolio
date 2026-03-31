@@ -233,6 +233,21 @@ const CERTIFICATIONS = [
   }
 ];
 
+// 経歴・参加プログラムのデータ
+const EXPERIENCES = [
+  {
+    company: "株式会社MediBang",
+    role: "Full-Stack Engineer (Part-time)",
+    period: "2026年4月 - Present",
+    desc: "ペイントソフトのフルスタック開発に従事。UIの設計・実装にとどまらず、コアとなる描画エンジン部分の開発や、ユーザー体験を向上させる新機能の企画・提案まで、プロダクト開発に一貫して携わる。",
+  },
+  {
+    company: "CA Tech Lounge",
+    role: "Backend Member",
+    period: "2026年4月 - Present", // ※実際の加入月に変更してください
+    desc: "株式会社サイバーエージェントが運営する学生向け技術支援プログラムのバックエンド会員として採択。サーバーサイドの技術研鑽に取り組む。",
+  }
+];
 
 export default function Home() {
   const featuredProjects = allProjects.filter((p) => CONFIDENT_PROJECTS.includes(p.title));
@@ -259,7 +274,9 @@ export default function Home() {
             enari_K
           </h1>
           <p className="text-lg text-gray-600 mb-2">
-            東京科学大学 (旧東工大) 物質理工学院 材料系 B2 / traP
+            東京科学大学 (旧東工大) 物質理工学院 材料系 B3<br />
+            東京科学大学デジタル創作同好会traP<br />
+            Ca Tech Lounge バックエンド会員 / 株式会社MediBang フルスタックエンジニア
           </p>
           <p className="text-sm text-gray-500 font-mono mb-2 flex items-center justify-center md:justify-start gap-2">
             E-mail : contact@enari-k.com
@@ -282,6 +299,16 @@ export default function Home() {
             <SocialLink href="https://github.com/enari-k" label="Github" color="bg-gray-800 text-white"/>
           </div>
         </header>
+        <section className="mb-16">
+          <h2 className="text-2xl font-bold border-b-2 border-blue-200 pb-2 mb-6">
+            💼 Experience
+          </h2>
+          <div className="flex flex-col gap-4">
+            {EXPERIENCES.map((exp, index) => (
+              <ExperienceItem key={index} data={exp} />
+            ))}
+          </div>
+        </section>
         {/* --- 自信のある作品セクション --- */}
         <section className="mb-16">
           <h2 className="text-2xl font-bold border-b-2 border-blue-200 pb-2 mb-6">
@@ -459,6 +486,19 @@ function CertificationCard({ data }: { data: typeof CERTIFICATIONS[0] }) {
           </div>
         ))}
       </div>
+    </div>
+  );
+}
+
+function ExperienceItem({ data }: { data: typeof EXPERIENCES[0] }) {
+  return (
+    <div className="bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow border-l-4 border-l-blue-500">
+      <div className="flex flex-col md:flex-row md:items-baseline justify-between mb-2">
+        <h3 className="font-bold text-lg text-gray-900">{data.company}</h3>
+        <span className="text-sm font-mono text-gray-500 bg-gray-50 px-2 py-1 rounded">{data.period}</span>
+      </div>
+      <p className="text-sm font-semibold text-blue-600 mb-2">{data.role}</p>
+      <p className="text-sm text-gray-700 leading-relaxed">{data.desc}</p>
     </div>
   );
 }
