@@ -6,10 +6,8 @@ import { link } from "fs";
 // 自信のある作品のタイトルリスト
 const CONFIDENT_PROJECTS = [
   "traPortal",
-  "traQ",
   "Material-based Physics Engine",
-  "Nand to Tetris",
-  "idexias",
+  "TCP/IPフルスタック",
   //"No framework web",
   "悪夢祓いのアリス",
   //"君を蝕むこの力で"
@@ -43,6 +41,15 @@ const allProjects = [
   zenn: "https://zenn.dev/enari_k/articles/f21bc592f87a7a", 
   category: "R&D",
   tags: ["C#", "Physics", "Math", "Optimization"]
+},
+{
+  title: "TCP/IPフルスタック",
+  role: "",
+  desc: "「ゼロからのTCP/IPプロトコルフルスタック自作入門」という本を参考に進めているプロジェクト。いずれ、OS層などと結び付けてepollの機能の実装などをやりたい。",
+  link: "https://github.com/enari-k/TCP-IP-fullscrach/tree/works",
+  zenn: "",
+  category: "computer science",
+  tags: ["C", "TCP/IP"]
 },
 {
   title:"Nand to Tetris",
@@ -288,7 +295,7 @@ export default function Home() {
             E-mail : contact@enari-k.com
           </p>
           <div className="flex flex-wrap gap-2 justify-center md:justify-start mt-4">
-            {["Game Dev", "Material Science", "Web Dev", "AtCoder", "Kaggle", "Live2D", "Scenario"].map((tag) => (
+            {["Backend Engineering", "Low-Layer / CS", "Materials Informatics", "AtCoder (Green/Cyan)", "Physics Simulation", "Game Dev"].map((tag) => (
               <span key={tag} className="px-3 py-1 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-600 shadow-sm">
                 {tag}
               </span>
@@ -315,17 +322,6 @@ export default function Home() {
             ))}
           </div>
         </section>
-        {/* --- 自信のある作品セクション --- */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold border-b-2 border-blue-200 pb-2 mb-6">
-            ✨ Featured Projects
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {featuredProjects.map((project, index) => (
-              <ProjectCard key={index} data={project} isArchive={false} />
-            ))}
-          </div>
-        </section>
         {/* --- 大会・コンテスト --- */}
         <section className="mb-16">
           <h2 className="text-2xl font-bold border-b-2 border-gray-200 pb-2 mb-6">
@@ -344,6 +340,17 @@ export default function Home() {
             <Link href="/about" className="text-sm text-blue-600 hover:underline font-medium">
               View Credentials / About Me →
             </Link>
+          </div>
+        </section>
+        {/* --- 自信のある作品セクション --- */}
+        <section className="mb-16">
+          <h2 className="text-2xl font-bold border-b-2 border-blue-200 pb-2 mb-6">
+            ✨ Featured Projects
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {featuredProjects.map((project, index) => (
+              <ProjectCard key={index} data={project} isArchive={false} />
+            ))}
           </div>
         </section>
         {/*【ここに追加】スキル・修了コースセクション */}
