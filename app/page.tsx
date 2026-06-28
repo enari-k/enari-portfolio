@@ -244,9 +244,15 @@ const EXPERIENCES = [
   {
     company: "CA Tech Lounge",
     role: "Backend Member",
-    period: "2026年4月 - Present", // ※実際の加入月に変更してください
+    period: "2026年4月 - Present",
     desc: "株式会社サイバーエージェントが運営する学生向け技術支援プログラムのバックエンド会員として採択。サーバーサイドの技術研鑽に取り組む。",
-  }
+  },
+  {
+    company: "株式会社Sansan",
+    role: "Data Intelligence部門 Master Data Group Engineer",
+    period: "2026年6月 - 2026年8月",
+    desc: "全社横断のデータ基盤における住所正規化パイプラインのパフォーマンスチューニングを担当。GCPの実行ログを用いたプロファイリングにより律速箇所を特定し、BigQuery上のJavaScript UDFをネイティブSQLへリファクタリングする等のアーキテクチャ改善を実施。インフラ計算コストの削減（FinOps）およびCI/CD待機時間の短縮による開発者体験（DX）の向上に貢献。",
+  },
 ];
 
 export default function Home() {
@@ -291,7 +297,7 @@ export default function Home() {
           
           {/* ソーシャルリンクボタン */}
           <div className="flex flex-wrap gap-4 mt-6 justify-center md:justify-start">
-            <SocialLink href="https://atcoder.jp/users/enari_K" label="AtCoder" color="bg-yellow-900 text-white" />
+            <SocialLink href="https://atcoder.jp/users/enari_K" label="AtCoder" color="bg-green-600 text-white" />
             <SocialLink href="https://unityroom.com/users/enari-k" label="unityroom" color="bg-indigo-600 text-white" />
             <SocialLink href="https://zenn.dev/enari_k" label="Zenn" color="bg-blue-500 text-white" />
             <SocialLink href="https://www.kaggle.com/enarik" label="Kaggle" color="bg-sky-500 text-white" />
